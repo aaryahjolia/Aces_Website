@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* font-family: ; write font here */
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.img_event {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 50vh;
+  background-color: #eee;
+  /* padding: 0 1.5rem; */
+}
+.h1_event{
+  text-align: center;
+  font-size: 67px;
+  padding-top: 45px;
+}
+.event {
+  width: 80%;
+  max-width: 98rem;
+  padding: 3rem;
+  background-color: #fff;
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 0.8rem;
+  margin: 10rem auto;
+  margin-top: 4rem;
+}
+.event_img{
+  min-width: 35rem;
+  max-width: 35rem;
+  height: 30rem;
+  transform: translateX(-8rem);
+  position: relative;
+}
+.event_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.8rem;
+}
+.event_img::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* gradient nakhvu hoy toh */
+  box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.05);
+  border-radius: 0.8rem;
+}
+
+.event_date span {
+  display: block;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+.eventTitle {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.9);
+}
+.event_cta {
+  display: inline-block;
+  padding: 1.2rem 2.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    #0683b4 37%,
+    #055675 100%
+  );
+  border-radius: 1rem;
+  text-decoration: none;
+}
+.event_cta:hover {
+  background: linear-gradient(
+    90deg,
+    #056388 37%,
+    #0683b4 100%
+  );
+}
+.eventText{
+    margin-bottom: 1rem;
+}
